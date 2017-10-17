@@ -45,6 +45,23 @@ API
     # Create comment for specific ticket
     curl -d 'text=Text of comment for this ticket&email=my@email.com' 85.143.219.32:8000/api/tickets/1/comments/
 
+Knowledge issues
+============
+    
+    # after
+    python setup.py install
+    
+    # you may get error:
+    Installed /usr/local/lib/python2.7/dist-packages/Flask_RESTful-0.3.6-py2.7.egg
+    error: The 'flask' distribution was not found and is required by ticket-system
+    
+    # then simply run the installation again
+    python setup.py install
+    
+    # https://github.com/pallets/flask/issues/1106
+    
+
+
 TODO
 ============
   * Cache as decorator for controller methods
