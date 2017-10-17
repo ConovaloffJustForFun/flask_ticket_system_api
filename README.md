@@ -37,3 +37,8 @@ API
 
     # Create comment for specific ticket
     curl -d 'text=Text of comment for this ticket&email=my@email.com' localhost:8000/api/tickets/1/comments/
+
+TODO
+============
+  * Cache as decorator for controller methods
+  * SQLAlchemy and ORM
